@@ -1,0 +1,19 @@
+[credential "https://github.com"]
+        helper = 
+        helper = !/opt/homebrew/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+        helper = 
+        helper = !/opt/homebrew/bin/gh auth git-credential
+[user]
+        signingkey = 4F50A896A75E2328
+        email = florian.leroux3@laposte.net
+        name = Florian LEROUX
+[commit]
+        gpgsign = true
+[alias]
+        ch = checkout
+        st = status
+[core]
+        editor = code
+[merge]
+        tool = code
