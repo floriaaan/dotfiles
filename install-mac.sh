@@ -3,7 +3,7 @@
 echo "-----------------------------------"
 echo "Starting install script... (this may take a while)"
 echo "MacOS version: $(sw_vers -productVersion)"
-echo "Last updated: 2023-11-27"
+echo "Last updated: 2023-11-28"
 echo "-----------------------------------"
 
 
@@ -38,7 +38,7 @@ echo "\nINFO: zsh plugins restored ✅"
 
 # Copy zsh config
 echo "INFO: restoring zsh config..."
-curl https://raw.githubusercontent.com/floriaaan/dotfiles/main/terminal/.zshrc > ~/.zshrc
+curl https://raw.githubusercontent.com/floriaaan/dotfiles/main/shell/.zshrc > ~/.zshrc
 echo "INFO: restored zsh config ✅"
 
 echo "-----------------------------------"
@@ -53,7 +53,8 @@ echo "INFO: restoring node packages..."
 npm install -g \
     pnpm \
     expo \
-    @microsoft/inshellisense
+    @microsoft/inshellisense \
+    @antfu/ni
 
 echo "INFO: node packages restored ✅"
 

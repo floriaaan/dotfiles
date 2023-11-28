@@ -1,7 +1,7 @@
 echo "-----------------------------------"
 echo "Starting install script... (this may take a while)"
 echo "Windows version $(systeminfo | findstr /B /C:"OS Name" /C:"OS Version")"
-echo "Last updated: 2023-11-27"
+echo "Last updated: 2023-11-28"
 echo "-----------------------------------"
 
 # Install scoop
@@ -22,7 +22,7 @@ echo "-----------------------------------"
 
 # Install zsh on Git bash
 echo "INFO: installing zsh..."
-echo "TODO"
+echo "WARN: TODO"
 # echo "INFO: zsh installed ✅"
 
 
@@ -31,6 +31,9 @@ echo "TODO"
 # ZSH plugins
 
 # Copy zsh config
+echo "INFO: restoring zsh config..."
+iwr -useb https://raw.githubusercontent.com/floriaaan/dotfiles/main/shell/windows/.zshrc -o ~/.gitconfig
+
 echo "-----------------------------------"
 
 # Install nodejs latest LTS
@@ -42,6 +45,7 @@ echo "INFO: restoring node packages..."
 npm install -g \
     pnpm \
     expo \
+    @antfu/ni \
     @microsoft/inshellisense
 
 echo "INFO: node packages restored ✅"

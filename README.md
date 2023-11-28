@@ -1,24 +1,28 @@
 # dotfiles
 
+| Script                                     | Status     | Updated    |
+| ------------------------------------------ | ---------- | ---------- |
+| [install-mac.sh](install-mac.sh)           | not tested | 2023-11-28 |
+| [install-windows.ps1](install-windows.ps1) | not tested | 2023-11-28 |
+
 ## About
 
 This repository contains my dotfiles. It is used to setup a new machine.
 
 The setup scripts will install/config the following:
+
 - A package manager (brew or scoop) will install the following packages:
-    - git
-    - nvm
-    - vscode
-    - windows terminal (windows only)
+  - git
+  - nvm
+  - vscode
+  - windows terminal (windows only)
 - zsh, oh-my-zsh and plugins
 - nvm and node (latest LTS) with global packages:
-    - pnpm
-    - expo
-    - @microsoft/inshellisense
+  - pnpm
+  - expo
+  - @microsoft/inshellisense
 
 and many more...
-
-
 
 ## Installation
 
